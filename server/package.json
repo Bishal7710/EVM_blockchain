@@ -2,11 +2,9 @@
     "name": "server",
     "module": "index.ts",
     "type": "module",
-
     "scripts": {
         "dev": "nodemon server.js"
     },
-
     "devDependencies": {
         "@types/bun": "latest"
     },
@@ -18,6 +16,7 @@
         "dotenv": "^16.4.7",
         "express": "^4.21.2",
         "mongoose": "^8.8.4",
-        "morgan": "^1.10.0"
+        "morgan": "^1.10.0",
+        "validator": "^13.12.0"
     }
 }

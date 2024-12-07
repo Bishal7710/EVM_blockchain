@@ -5,9 +5,9 @@ import cors from "cors";
 import morgan from "morgan";
 
 //<==============IMPORT ROUTES=============>
-// import studentRoutes from "./src/routes/studentRoute.js";
-// import dataRoutes from "./src/routes/dataRoute.js";
-
+import voterRoutes from "./src/routes/voterRoute.js";
+import vCenterRoutes from "./src/routes/vCenterRoute.js"
+import conflictRoutes from "./src/routes/conflictRoute.js"
 dotenv.config();
 
 const app = express();
@@ -25,8 +25,9 @@ app.use(cors());
 connectDB();
 
 //<==============USING ROUTES=============>
-// app.use("/student", studentRoutes); // student routes
-// app.use("/data", dataRoutes); // data routes
+app.use("/voter", voterRoutes); // voter routes
+app.use("/vcenter", vCenterRoutes) // voting center
+app.use("/data", conflictRoutes); // check conflict routes
 
 const port = process.env.PORT;
 

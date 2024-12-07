@@ -30,4 +30,4 @@ const voterSchema = new mongoose.Schema({
     },
 }, { timestamps: true });
 
-export const voter = mongoose.model("voter", voterSchema);
+export const Voter = mongoose.model("voter", voterSchema);
